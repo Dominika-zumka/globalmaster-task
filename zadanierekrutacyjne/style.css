@@ -1,0 +1,139 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+
+.header {
+    margin: 15px auto;
+    border-radius: 10px;
+    background-image: url('img/new.jpg'); 
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 90vw;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.quote-button {
+    opacity: 0.7;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.quote-button img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.i {
+    margin-top: 0px;
+}
+
+/* Sekcja Kategorii */
+.section {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: left;
+}
+
+.find {
+    color: rgb(130, 130, 130);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section b {
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+.all {
+    margin-top: -50px;
+    color: rgb(130, 130, 130);
+    float: right;
+    font-size: 1rem;
+}
+
+.all img {
+    margin-top: -10px;
+    float: left;
+}
+
+
+.siatka {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    padding: 0 20px;
+}
+
+/* Kafelki */
+.option {
+    height: 330px;
+    width: 210px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px;
+}
+
+.option img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.option p {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Media Queries dla Responsywności */
+@media (min-width: 768px) {
+    .siatka {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolumny na ekranach tabletów */
+    }
+}
+
+@media (min-width: 992px) {
+    .siatka {
+        grid-template-columns: repeat(4, 1fr); /* 4 kolumny na średnich ekranach */
+    }
+}
+
+@media (min-width: 1200px) {
+    .siatka {
+        grid-template-columns: repeat(6, 1fr); /* 6 kolumn na dużych ekranach */
+    }
+}
